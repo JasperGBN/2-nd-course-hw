@@ -39,15 +39,20 @@ body {
 .top__button {
   width: 234px;
   height: 48px;
-  background: #9C0332;
-  border: 1px solid #9C0332;
   border-radius: 30px;
+  background-color: #9C0332;
   color: #FFF;
   font-size: 18px;
   font-weight: 400;
+  text-decoration: none;
+  display: flex;
+  align-items: center;
+  text-align: center;
+  justify-content: center;
+  transition: background-color 0.2s ease-in;
 }
 .top__button:hover {
-  cursor: pointer;
+  background: #EB443F;
 }
 
 .for {
@@ -62,6 +67,7 @@ body {
   border-radius: 16px;
   background: linear-gradient(180deg, rgba(39, 1, 15, 0) 0%, #001944 100%), url(<path-to-image>), lightgray 50%/cover no-repeat;
   text-decoration: none;
+  transition: border 0.5s ease-in;
 }
 .for__item:hover {
   border: 3px solid #44D2FF;
