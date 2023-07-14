@@ -39,15 +39,20 @@ body {
 .top__button {
   width: 234px;
   height: 48px;
-  background: #9C0332;
-  border: 1px solid #9C0332;
   border-radius: 30px;
+  background-color: #9C0332;
   color: #FFF;
   font-size: 18px;
   font-weight: 400;
+  text-decoration: none;
+  display: flex;
+  align-items: center;
+  text-align: center;
+  justify-content: center;
+  transition: background-color 0.2s ease-in;
 }
 .top__button:hover {
-  cursor: pointer;
+  background: #EB443F;
 }
 
 .for {
@@ -61,6 +66,8 @@ body {
   border: 3px solid #000915;
   border-radius: 16px;
   background: linear-gradient(180deg, rgba(39, 1, 15, 0) 0%, #001944 100%), url(<path-to-image>), lightgray 50%/cover no-repeat;
+  text-decoration: none;
+  transition: border 0.5s ease-in;
 }
 .for__item:hover {
   border: 3px solid #44D2FF;
@@ -70,21 +77,63 @@ body {
   gap: 32px;
   grid-template-columns: repeat(12, 1fr);
 }
-.for__item_1 {
-  background-image: url(./img/game1.jpg);
+.for__item-title {
+  color: #FFF;
+  font-size: 24px;
+  font-weight: 600;
+  line-height: 1.3;
+  margin-top: 236px;
+  margin-left: 32px;
+}
+
+.for__item:nth-child(1) {
+  background-image: url(./img/Game1.png);
   background-repeat: no-repeat;
   background-position: center;
   background-size: cover;
 }
-.for__item_2 {
-  background-image: url(./img/game2.jpg);
+
+.for__item:nth-child(2) {
+  background-image: url(./img/Game2.png);
   background-repeat: no-repeat;
   background-position: center;
   background-size: cover;
 }
-.for__item_3 {
-  background-image: url(./img/game3.jpg);
+
+.for__item:nth-child(3) {
+  background-image: url(./img/Game3.png);
   background-repeat: no-repeat;
   background-position: center;
   background-size: cover;
+}
+
+@media (max-width: 767px) {
+  .center {
+    padding-left: 16px;
+    padding-right: 16px;
+  }
+  .top {
+    display: flex;
+    flex-direction: column;
+    align-items: center;
+    height: 736px;
+    padding-top: 238px;
+  }
+  .top__title {
+    text-align: center;
+    max-width: 343px;
+    font-size: 32px;
+  }
+  .top__text {
+    text-align: center;
+    font-size: 14px;
+    line-height: 22px;
+    margin-bottom: 32px;
+  }
+  .for__item {
+    grid-column: 1/-1;
+  }
+  .for__item-box {
+    grid-template-columns: repeat(4, 1fr);
+  }
 }/*# sourceMappingURL=style.css.map */
