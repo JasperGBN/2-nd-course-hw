@@ -1,3 +1,9 @@
+@media (min-width: 768px) and (max-width: 1260px) {
+  .center {
+    padding-left: 30px;
+    padding-right: 30px;
+  }
+}
 @media (max-width: 767px) {
   .center {
     padding-left: 16px;
@@ -26,5 +32,18 @@
   }
   .for__item-box {
     grid-template-columns: repeat(4, 1fr);
+  }
+  .game {
+    flex-direction: column;
+    align-items: center;
+    padding-top: 50px;
+    padding-bottom: 80px;
+    gap: 64px;
+  }
+  .game__info {
+    text-align: center;
+  }
+  .game__info-box {
+    align-items: center;
   }
 }/*# sourceMappingURL=mobile.css.map */
